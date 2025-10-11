@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1059575636148177299
+--- !u!1 &3416717503881492125
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7212085714237368850}
-  - component: {fileID: 4765589678384223894}
-  - component: {fileID: 7084234825668427112}
+  - component: {fileID: 2603448762202811431}
+  - component: {fileID: 1409227896727823234}
+  - component: {fileID: 3776939022561613640}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: StolenManFixed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7212085714237368850
+--- !u!4 &2603448762202811431
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059575636148177299}
+  m_GameObject: {fileID: 3416717503881492125}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 25, y: 25, z: 25}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2574384205333692068}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!33 &4765589678384223894
+--- !u!33 &1409227896727823234
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059575636148177299}
-  m_Mesh: {fileID: 2534964839176971238, guid: eb46f2fdb77a8084d9f2cf6b82a48562, type: 3}
---- !u!23 &7084234825668427112
+  m_GameObject: {fileID: 3416717503881492125}
+  m_Mesh: {fileID: 2534964839176971238, guid: 475290936aa94e94a95caf8e0982e986, type: 3}
+--- !u!23 &3776939022561613640
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059575636148177299}
+  m_GameObject: {fileID: 3416717503881492125}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -116,7 +116,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 90024010655016321}
-  - {fileID: 7212085714237368850}
+  - {fileID: 2603448762202811431}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8541055424404669073
@@ -146,7 +146,7 @@ Transform:
   m_GameObject: {fileID: 8541055424404669073}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -794,7 +794,7 @@ ParticleSystem:
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 2
     m_MeshMaterialIndex: 0
-    m_MeshNormalOffset: -0.002
+    m_MeshNormalOffset: -0.0002
     m_MeshSpawn:
       mode: 0
       spread: 0
@@ -852,7 +852,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
     m_Mesh: {fileID: 0}
-    m_MeshRenderer: {fileID: 7084234825668427112}
+    m_MeshRenderer: {fileID: 3776939022561613640}
     m_SkinnedMeshRenderer: {fileID: 0}
     m_Sprite: {fileID: 0}
     m_SpriteRenderer: {fileID: 0}
