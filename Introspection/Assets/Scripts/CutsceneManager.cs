@@ -4,9 +4,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CutsceneManager : MonoBehaviour
 {
+    [SerializeField] private string nextScene;
+    private AsyncOperation asyncOperation;
+
     private bool inCutscene = false;
     private bool loadingText = false;
     private bool transition = false;
@@ -54,6 +58,9 @@ public class CutsceneManager : MonoBehaviour
             panel.SetActive(true);
             panelAnimator.SetTrigger("fadeIn");
 
+            asyncOperation = SceneManager.LoadSceneAsync(nextScene);
+            asyncOperation.allowSceneActivation = false;
+
             Invoke(nameof(StartText), 1f);
         }
     }
@@ -76,6 +83,7 @@ public class CutsceneManager : MonoBehaviour
         {
             displayText.text = text.Substring(0, i);
             yield return new WaitForSeconds(textSpeed);
+            Debug.Log(asyncOperation.progress + "% scene loaded");
         }
 
         loadingText = false;
@@ -107,17 +115,12 @@ public class CutsceneManager : MonoBehaviour
             index++;
             if (index >= cutscene.cutsceneTexts.Length)
             {
-                panelAnimator.SetTrigger("fadeOut");
                 textAnimator.SetTrigger("fadeOut");
 
-                index = 0;
-
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.5f);
 
                 inCutscene = false;
-                playerMove.locked = false;
-                playerLook.locked = false;
-                //end or next scene
+                asyncOperation.allowSceneActivation = true;
             }
             else
             {

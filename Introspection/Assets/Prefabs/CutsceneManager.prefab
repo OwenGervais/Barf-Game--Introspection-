@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe471206e701d9e47bf59ce421b42e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: 
   player: {fileID: 0}
   cutscene: {fileID: 11400000, guid: 4be7149adddfa8b4385b61d7719fc11b, type: 2}
   textSpeed: 0.05
@@ -217,9 +218,9 @@ MonoBehaviour:
   m_fontSize: 25
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 25
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -298,7 +299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1609198024243609778
 RectTransform:
   m_ObjectHideFlags: 0
