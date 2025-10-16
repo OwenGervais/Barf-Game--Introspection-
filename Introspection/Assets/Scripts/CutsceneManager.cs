@@ -20,7 +20,7 @@ public class CutsceneManager : MonoBehaviour
     private PlayerMove playerMove;
     private PlayerLook playerLook;
 
-    [SerializeField] private Cutscene cutscene;
+    public Cutscene cutscene;
     [SerializeField] private float textSpeed;
     private Coroutine currentCoroutine = null;
 
@@ -35,14 +35,6 @@ public class CutsceneManager : MonoBehaviour
 
         panelAnimator = panel.GetComponent<Animator>();
         textAnimator = displayText.GetComponent<Animator>();
-    }
-
-    private void Update() //test features
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCutscene();
-        }
     }
 
     public void StartCutscene()

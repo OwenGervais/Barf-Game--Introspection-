@@ -252,9 +252,10 @@ GameObject:
   - component: {fileID: 367711656}
   - component: {fileID: 367711655}
   - component: {fileID: 367711654}
+  - component: {fileID: 367711658}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -303,7 +304,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: f629d2b9ed0292f4197627666a0e6e7b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -348,6 +349,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &367711658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367711653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 011ab0e7b66f54140a40f3bb192c8b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutsceneManager: {fileID: 1559225540785137191}
+  progressTracker: {fileID: 1559225540785137190}
+  cutscenePath: {fileID: 11400000, guid: 4be7149adddfa8b4385b61d7719fc11b, type: 2}
+  positivePath: 0
+  stageNum: 2
+  unSelected: {fileID: 2100000, guid: f629d2b9ed0292f4197627666a0e6e7b, type: 2}
+  selected: {fileID: 2100000, guid: 8860c173ae3705540abebb726a3ac6b7, type: 2}
 --- !u!1 &1321755224
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +670,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38f5a85ce41278b438dbfc964e07297e, type: 3}
+--- !u!114 &1559225540785137190 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9138326194026861215, guid: 38f5a85ce41278b438dbfc964e07297e, type: 3}
+  m_PrefabInstance: {fileID: 1559225540785137189}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1761d6c91a88c0d4f912aab123b5c6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1559225540785137191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8812382079875799458, guid: 38f5a85ce41278b438dbfc964e07297e, type: 3}
+  m_PrefabInstance: {fileID: 1559225540785137189}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe471206e701d9e47bf59ce421b42e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5328612158372760421
 PrefabInstance:
   m_ObjectHideFlags: 0
