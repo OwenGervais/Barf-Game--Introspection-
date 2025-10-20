@@ -33,6 +33,10 @@ public class InteractableObj : MonoBehaviour
         cutsceneManager.cutscene = cutscenePath;
         cutsceneManager.StartCutscene();
 
-        progressTracker.ChangeProgress(positivePath, stageNum - 1);
+        if (stageNum != 0)
+        {
+            progressTracker.ChangeProgress(positivePath, stageNum - 1);
+        }
+        
     }
 }

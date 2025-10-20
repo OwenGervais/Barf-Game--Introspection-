@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orientation: {fileID: 4928859213590058021}
-  range: 2.5
+  range: 1
 --- !u!114 &8566359355474903580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,13 +252,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3502019299476572336}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b40f1f926f0d244d82927ea9826e3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stepTime: 0.8
-  defaultWalk: {fileID: 0}
+  stepTime: 0.5
+  defaultWalk:
+  - {fileID: 8300000, guid: b956ca9329162204aae629eaf9b6d919, type: 3}
+  - {fileID: 8300000, guid: c2178a48aaf2e6047b578443503b99fe, type: 3}
+  - {fileID: 8300000, guid: 01b120ad175295d45bdf7638c8668c61, type: 3}
   glassWalk: {fileID: 0}
 --- !u!82 &6803031253406534336
 AudioSource:
@@ -273,7 +276,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

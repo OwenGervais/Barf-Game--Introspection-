@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4fce1d77bf74a4ea2f354601683cc9, type: 3}
+  m_Name: Friend's House Bad
+  m_EditorClassIdentifier: 
+  cutsceneTexts:
+  - <color=red>See I knew you'd come around. Its fun isn't it?
+  - I guess...
+  - "<color=red>Come on, don\u2019t \u201CI guess\u201D me."
+  - What?
+  - "<color=red>You\u2019re finally doing it, you might as well admit you like it."
+  - ...
+  - <color=#c0c0c0ff>It isn't going to end here. I should've just walked away.

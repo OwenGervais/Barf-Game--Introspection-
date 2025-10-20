@@ -12,7 +12,7 @@ public class WalkSound : MonoBehaviour
     [Header("Sounds")]
     private AudioSource audioSource;
     private AudioClip currentSound;
-    [SerializeField] private AudioClip defaultWalk;
+    [SerializeField] private AudioClip[] defaultWalk;
     [SerializeField] private AudioClip glassWalk;
 
     private Coroutine footstepCoroutine;
@@ -44,7 +44,7 @@ public class WalkSound : MonoBehaviour
             }
             else
             {
-                currentSound = defaultWalk;
+                currentSound = defaultWalk[Random.Range(0,defaultWalk.Length)];
             }
         }
 
