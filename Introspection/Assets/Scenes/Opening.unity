@@ -931,6 +931,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3219046119941515864, guid: 613aaa4db9c7eeb4ab7aa7c5f111f336, type: 3}
+      propertyPath: stageNum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219046119941515864, guid: 613aaa4db9c7eeb4ab7aa7c5f111f336, type: 3}
+      propertyPath: cutscenePath
+      value: 
+      objectReference: {fileID: 11400000, guid: c8cfdc85e9cc0c84fa05bbe447c7d3d3, type: 2}
+    - target: {fileID: 3219046119941515864, guid: 613aaa4db9c7eeb4ab7aa7c5f111f336, type: 3}
+      propertyPath: cutsceneManager
+      value: 
+      objectReference: {fileID: 477010546}
+    - target: {fileID: 3219046119941515864, guid: 613aaa4db9c7eeb4ab7aa7c5f111f336, type: 3}
+      propertyPath: progressTracker
+      value: 
+      objectReference: {fileID: 477010545}
     - target: {fileID: 5739401188505131989, guid: 613aaa4db9c7eeb4ab7aa7c5f111f336, type: 3}
       propertyPath: m_Name
       value: Black Man (WIP)

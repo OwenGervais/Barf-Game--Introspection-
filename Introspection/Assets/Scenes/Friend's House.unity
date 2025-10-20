@@ -913,25 +913,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 670255904333424404, guid: 8aa9ae96d1291b546bddc2a10f497461, type: 3}
   m_PrefabInstance: {fileID: 954875638}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &181455192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181455188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 011ab0e7b66f54140a40f3bb192c8b02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cutsceneManager: {fileID: 229615814}
-  progressTracker: {fileID: 229615813}
-  cutscenePath: {fileID: 11400000, guid: 596feca665fdf3f48b23ce7e919c639c, type: 2}
-  positivePath: 1
-  stageNum: 1
-  unSelected: {fileID: 2100000, guid: 6e84c094dd161be4b89a4c4a714e60fe, type: 2}
-  selected: {fileID: 2100000, guid: d12aa56b1c7b3e94292d5a5f8135f9bf, type: 2}
 --- !u!65 &181455193
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -953,6 +934,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.04444443, y: 0.009658723, z: 0.0853774}
   m_Center: {x: -0.0013182112, y: 0.0011868317, z: 0.04099859}
+--- !u!114 &181455194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181455188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4bff237dc97ad4ca6add508e4b7e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unSelected: {fileID: 2100000, guid: 6e84c094dd161be4b89a4c4a714e60fe, type: 2}
+  selected: {fileID: 2100000, guid: d12aa56b1c7b3e94292d5a5f8135f9bf, type: 2}
+  cutsceneManager: {fileID: 229615814}
+  progressTracker: {fileID: 229615813}
+  cutscenePath: {fileID: 11400000, guid: 596feca665fdf3f48b23ce7e919c639c, type: 2}
+  positivePath: 1
+  stageNum: 2
 --- !u!1 &217503818
 GameObject:
   m_ObjectHideFlags: 0
@@ -4723,7 +4723,7 @@ PrefabInstance:
       addedObject: {fileID: 181455193}
     - targetCorrespondingSourceObject: {fileID: 670255904333424404, guid: 8aa9ae96d1291b546bddc2a10f497461, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 181455192}
+      addedObject: {fileID: 181455194}
   m_SourcePrefab: {fileID: 100100000, guid: 8aa9ae96d1291b546bddc2a10f497461, type: 3}
 --- !u!4 &954875639 stripped
 Transform:
@@ -9139,6 +9139,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3219046119941515864, guid: 613aaa4db9c7eeb4ab7aa7c5f111f336, type: 3}
+      propertyPath: cutsceneManager
+      value: 
+      objectReference: {fileID: 229615814}
+    - target: {fileID: 3219046119941515864, guid: 613aaa4db9c7eeb4ab7aa7c5f111f336, type: 3}
+      propertyPath: progressTracker
+      value: 
+      objectReference: {fileID: 229615813}
     - target: {fileID: 5739401188505131989, guid: 613aaa4db9c7eeb4ab7aa7c5f111f336, type: 3}
       propertyPath: m_Name
       value: Black Man (WIP)

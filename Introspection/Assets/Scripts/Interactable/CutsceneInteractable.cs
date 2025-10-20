@@ -1,35 +1,17 @@
-using System;
 using UnityEngine;
 
-public class InteractableObj : MonoBehaviour
+public class CutsceneInteractable : InteractableObj
 {
-    private MeshRenderer meshRenderer;
-    
     [SerializeField] private CutsceneManager cutsceneManager;
     [SerializeField] private ProgressTracker progressTracker;
     [SerializeField] private Cutscene cutscenePath;
     [SerializeField] private bool positivePath;
     [SerializeField] private int stageNum;
-    [SerializeField] private Material unSelected;
-    [SerializeField] private Material selected;
 
-    private void Awake()
+    public override void Interacted()
     {
-        meshRenderer = GetComponent<MeshRenderer>();
-    }
-
-    private void Selected()
-    {
-        meshRenderer.material = selected;
-    }
-
-    private void Unselected()
-    {
-        meshRenderer.material = unSelected;
-    }
-
-    private void Interacted()
-    {
+        base.Interacted();
+        
         cutsceneManager.cutscene = cutscenePath;
         cutsceneManager.StartCutscene();
 
@@ -37,6 +19,5 @@ public class InteractableObj : MonoBehaviour
         {
             progressTracker.ChangeProgress(positivePath, stageNum - 1);
         }
-        
     }
 }

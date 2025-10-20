@@ -13,7 +13,7 @@ public class WalkSound : MonoBehaviour
     private AudioSource audioSource;
     private AudioClip currentSound;
     [SerializeField] private AudioClip[] defaultWalk;
-    [SerializeField] private AudioClip glassWalk;
+    [SerializeField] private AudioClip[] glassWalk;
 
     private Coroutine footstepCoroutine;
 
@@ -40,7 +40,7 @@ public class WalkSound : MonoBehaviour
         {
             if (hit.transform.gameObject.CompareTag("Glass"))
             {
-                currentSound = glassWalk;
+                currentSound = glassWalk[Random.Range(0,defaultWalk.Length)];
             }
             else
             {

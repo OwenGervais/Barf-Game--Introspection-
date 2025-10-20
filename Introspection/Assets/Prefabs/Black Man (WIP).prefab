@@ -4959,7 +4959,7 @@ PrefabInstance:
       addedObject: {fileID: 1748870060062862564}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67dcc6c41ec21a344a78ae8c3a9631c8, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8934045360738668465}
+      addedObject: {fileID: 3219046119941515864}
   m_SourcePrefab: {fileID: 100100000, guid: 67dcc6c41ec21a344a78ae8c3a9631c8, type: 3}
 --- !u!23 &6957749449762857218 stripped
 MeshRenderer:
@@ -4999,7 +4999,7 @@ CapsuleCollider:
   m_Height: 0.018
   m_Direction: 2
   m_Center: {x: 0.000000002980232, y: 0.0002850902, z: 0.00898163}
---- !u!114 &8934045360738668465
+--- !u!114 &3219046119941515864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5008,13 +5008,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8903080120477499607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 011ab0e7b66f54140a40f3bb192c8b02, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e4bff237dc97ad4ca6add508e4b7e21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutsceneManager: {fileID: 0}
-  progressTracker: {fileID: 0}
-  cutscenePath: {fileID: 0}
-  positivePath: 0
-  stageNum: 0
   unSelected: {fileID: 2100000, guid: 8bfc961b51c1e2842bef5f1a0c841df3, type: 2}
   selected: {fileID: 2100000, guid: 563c02a7c18d2ee47b93d187b149b5fe, type: 2}
+  cutsceneManager: {fileID: 0}
+  progressTracker: {fileID: 0}
+  cutscenePath: {fileID: 11400000, guid: 1f066bd14409da24aa119e56e792f27a, type: 2}
+  positivePath: 0
+  stageNum: 2
