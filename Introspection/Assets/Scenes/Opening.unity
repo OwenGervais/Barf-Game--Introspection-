@@ -932,8 +932,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3219046119941515864, guid: 613aaa4db9c7eeb4ab7aa7c5f111f336, type: 3}
+      propertyPath: selected
+      value: 
+      objectReference: {fileID: 2100000, guid: 8860c173ae3705540abebb726a3ac6b7, type: 2}
+    - target: {fileID: 3219046119941515864, guid: 613aaa4db9c7eeb4ab7aa7c5f111f336, type: 3}
       propertyPath: stageNum
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3219046119941515864, guid: 613aaa4db9c7eeb4ab7aa7c5f111f336, type: 3}
       propertyPath: cutscenePath

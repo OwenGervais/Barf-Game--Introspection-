@@ -5,7 +5,7 @@ public class ProgressTracker : MonoBehaviour
 {
     public static int totalProgress; //-5 to +5
 
-    public static bool[] stageProgress = new bool[] { false, false, false, false, false }; //false = fail, true = pass
+    public static bool[] stageProgress = new bool[] { false, false}; //false = fail, true = pass
 
     public void ChangeProgress(bool progress, int stage)
     {

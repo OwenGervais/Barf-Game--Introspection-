@@ -5017,4 +5017,4 @@ MonoBehaviour:
   progressTracker: {fileID: 0}
   cutscenePath: {fileID: 11400000, guid: 1f066bd14409da24aa119e56e792f27a, type: 2}
   positivePath: 0
-  stageNum: 2
+  stageNum: 1

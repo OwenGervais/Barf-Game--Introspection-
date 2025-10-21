@@ -117,7 +117,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orientation: {fileID: 4928859213590058021}
-  range: 1
+  range: 2.5
 --- !u!114 &8566359355474903580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,7 +262,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b956ca9329162204aae629eaf9b6d919, type: 3}
   - {fileID: 8300000, guid: c2178a48aaf2e6047b578443503b99fe, type: 3}
   - {fileID: 8300000, guid: 01b120ad175295d45bdf7638c8668c61, type: 3}
-  glassWalk: {fileID: 0}
+  glassWalk:
+  - {fileID: 0}
 --- !u!82 &6803031253406534336
 AudioSource:
   m_ObjectHideFlags: 0

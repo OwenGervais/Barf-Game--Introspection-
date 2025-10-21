@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4fce1d77bf74a4ea2f354601683cc9, type: 3}
+  m_Name: Ending 1
+  m_EditorClassIdentifier: 
+  cutsceneTexts:
+  - The light fades, you're trapped.
+  - An seemingly endless cycle of abuse.
+  - With no hope nor will power, escape is deemed impossible.
+  - 'Ending 1.
+
+    <color=#c0c0c0ff>Avoid talking to the all black figure.'

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Friend's House Bad
   m_EditorClassIdentifier: 
   cutsceneTexts:
-  - <color=red>See I knew you'd come around. Its fun isn't it?
+  - <color=red>See I knew you'd come around. It's fun isn't it?
   - I guess...
   - "<color=red>Come on, don\u2019t \u201CI guess\u201D me."
   - What?
