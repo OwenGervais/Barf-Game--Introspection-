@@ -22,18 +22,18 @@ public class ScreenShader : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.Alpha1))
-        {
-            Swap1();
-        }
+    //private void Update()
+    // {
+    //     if (Input.GetKey(KeyCode.Alpha1))
+    //     {
+    //         Swap1();
+    //     }
 
-        if (Input.GetKey(KeyCode.Alpha0))
-        {
-            SwapDefault();
-        }
-    }
+    //     if (Input.GetKey(KeyCode.Alpha0))
+    //     {
+    //         SwapDefault();
+    //     }
+    // }
 
     public void SwapDefault()
     {

@@ -71,11 +71,30 @@ public class CutsceneManager : MonoBehaviour
 
         String text = cutscene.cutsceneTexts[index];
 
-        for (int i = 0; i <= text.Length; i++)
+        int i = 0;
+        while (i <= text.Length)
         {
+            if (i < text.Length && text[i] == '<')
+            {
+                int tagEnd = text.IndexOf('>', i);
+                if (tagEnd != -1)
+                {
+                    i = tagEnd + 1;
+                }
+                else
+                {
+                    i = text.Length;
+                }
+                displayText.text = text.Substring(0, i);
+                continue;
+            }
+
+            // regular character: reveal and wait
             displayText.text = text.Substring(0, i);
             yield return new WaitForSeconds(textSpeed);
             Debug.Log(asyncOperation.progress + "% scene loaded");
+
+            i++;
         }
 
         loadingText = false;

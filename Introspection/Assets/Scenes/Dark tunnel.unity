@@ -396,17 +396,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b23be8278ec5af0409020682041abca7, type: 3}
---- !u!114 &403634004 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9138326194026861215, guid: 38f5a85ce41278b438dbfc964e07297e, type: 3}
-  m_PrefabInstance: {fileID: 1563745845}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1761d6c91a88c0d4f912aab123b5c6f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &403634005 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8812382079875799458, guid: 38f5a85ce41278b438dbfc964e07297e, type: 3}
@@ -487,10 +476,8 @@ GameObject:
   - component: {fileID: 753952195}
   - component: {fileID: 753952194}
   - component: {fileID: 753952193}
-  - component: {fileID: 753952197}
-  - component: {fileID: 753952198}
-  - component: {fileID: 753952200}
   - component: {fileID: 753952199}
+  - component: {fileID: 753952201}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Interactable
@@ -587,44 +574,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &753952197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753952192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e4bff237dc97ad4ca6add508e4b7e21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unSelected: {fileID: 2100000, guid: 027d92396fc3f89408f582cf0f3f47d6, type: 2}
-  selected: {fileID: 2100000, guid: 4895a80d0f28fd64e95b388448d1ce2c, type: 2}
-  cutsceneManager: {fileID: 403634005}
-  progressTracker: {fileID: 403634004}
-  cutscenePath: {fileID: 11400000, guid: 7a60914dc21113e409a06f213d2ae3c0, type: 2}
-  positivePath: 0
-  stageNum: 0
---- !u!114 &753952198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753952192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e4bff237dc97ad4ca6add508e4b7e21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unSelected: {fileID: 2100000, guid: 027d92396fc3f89408f582cf0f3f47d6, type: 2}
-  selected: {fileID: 2100000, guid: 4895a80d0f28fd64e95b388448d1ce2c, type: 2}
-  cutsceneManager: {fileID: 403634005}
-  progressTracker: {fileID: 403634004}
-  cutscenePath: {fileID: 11400000, guid: d4cc4e5013329204ca45f760c11c85cc, type: 2}
-  positivePath: 0
-  stageNum: 0
 --- !u!114 &753952199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,28 +586,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 631a1f2f746da904b917541c7d421a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GoodEnding: {fileID: 753952197}
-  MediumEnding: {fileID: 753952198}
-  BadEnding: {fileID: 753952200}
---- !u!114 &753952200
-MonoBehaviour:
+  cutsceneManager: {fileID: 403634005}
+  goodEnding: {fileID: 11400000, guid: 7a60914dc21113e409a06f213d2ae3c0, type: 2}
+  neutralEnding: {fileID: 11400000, guid: d4cc4e5013329204ca45f760c11c85cc, type: 2}
+  badEnding: {fileID: 11400000, guid: 80600dc3128f0414da17876ceef48384, type: 2}
+--- !u!95 &753952201
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753952192}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e4bff237dc97ad4ca6add508e4b7e21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unSelected: {fileID: 2100000, guid: 027d92396fc3f89408f582cf0f3f47d6, type: 2}
-  selected: {fileID: 2100000, guid: 4895a80d0f28fd64e95b388448d1ce2c, type: 2}
-  cutsceneManager: {fileID: 403634005}
-  progressTracker: {fileID: 403634004}
-  cutscenePath: {fileID: 11400000, guid: 80600dc3128f0414da17876ceef48384, type: 2}
-  positivePath: 0
-  stageNum: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 833bfc84d60420e42a4545d9f9403737, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1116178788
 GameObject:
   m_ObjectHideFlags: 0

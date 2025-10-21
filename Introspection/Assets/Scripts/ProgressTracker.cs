@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ProgressTracker : MonoBehaviour
 {
-    public static int totalProgress; //-5 to +5
+    public static int totalProgress = 0; //-5 to +5
 
     public static bool[] stageProgress = new bool[] { false, false}; //false = fail, true = pass
 
