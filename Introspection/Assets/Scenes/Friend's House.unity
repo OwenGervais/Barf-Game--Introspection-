@@ -5503,6 +5503,10 @@ PrefabInstance:
       value: Desk21
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 19a968dc34210f8418cd72b658fedddd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19a968dc34210f8418cd72b658fedddd, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5629,7 +5633,7 @@ PrefabInstance:
     - target: {fileID: 7071182760956848314, guid: 2d15345610adc4549a530e8f28383cdb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 6e84c094dd161be4b89a4c4a714e60fe, type: 2}
+      objectReference: {fileID: 2100000, guid: a73aaba9b89397f48a410d7c718f10ec, type: 2}
     - target: {fileID: 7202271454713460447, guid: 2d15345610adc4549a530e8f28383cdb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -6547,7 +6551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d11610052ba0b974dad94efe8a1959fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.287
+      value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d11610052ba0b974dad94efe8a1959fa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6555,7 +6559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d11610052ba0b974dad94efe8a1959fa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.554
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d11610052ba0b974dad94efe8a1959fa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6592,7 +6596,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d11610052ba0b974dad94efe8a1959fa, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 7952bcfacce1aab40bff96cbf6b03e2a, type: 2}
+      objectReference: {fileID: 2100000, guid: a1474457348aba54f90d245184ed0c53, type: 2}
     - target: {fileID: 919132149155446097, guid: d11610052ba0b974dad94efe8a1959fa, type: 3}
       propertyPath: m_Name
       value: chair2
@@ -9286,6 +9290,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -135
       objectReference: {fileID: 0}
+    - target: {fileID: 4449866672977052607, guid: 8aa9ae96d1291b546bddc2a10f497461, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a73aaba9b89397f48a410d7c718f10ec, type: 2}
     - target: {fileID: 5205272215839365269, guid: 8aa9ae96d1291b546bddc2a10f497461, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
