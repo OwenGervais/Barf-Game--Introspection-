@@ -2,10 +2,7 @@ Shader "Unlit/SimpleSpecular"
 {
     Properties
     {
-        _BaseColor ("Base Color", Color) = (1, 1, 1, 1)   
-        _MainTex ("Base Texture", 2D) = "white" {}        
-        _SpecColor ("Specular Color", Color) = (1, 1, 1, 1)
-        _Shininess ("Shininess", Range(0.1, 100)) = 16     
+        _BaseColor ("Base Color", Color) = (1, 1, 1, 1) 
     }
 
     SubShader
@@ -25,64 +22,43 @@ Shader "Unlit/SimpleSpecular"
             {
                 float4 positionOS : POSITION;  
                 float3 normalOS : NORMAL;      
-                float2 uv : TEXCOORD0;         
             };
 
             struct Varyings
             {
-                float4 positionHCS : SV_POSITION;
-                float3 normalWS : TEXCOORD1;     
-                float3 viewDirWS : TEXCOORD2;    
-                float2 uv : TEXCOORD0;           
+                float4 positionHCS : SV_POSITION; 
+                float3 posWS : TEXCOORD0;         
+                float3 normalWS : TEXCOORD1;      
             };
 
-          
-            TEXTURE2D(_MainTex);
-            SAMPLER(sampler_MainTex);
-
             CBUFFER_START(UnityPerMaterial)
-                float4 _BaseColor; 
-                float4 _SpecColor; 
-                float _Shininess;  
+                float4 _BaseColor;   
             CBUFFER_END
 
             Varyings vert(Attributes IN)
             {
                 Varyings OUT;
+                OUT.posWS = TransformObjectToWorld(IN.positionOS.xyz);
                 OUT.positionHCS = TransformObjectToHClip(IN.positionOS.xyz);
                 OUT.normalWS = normalize(TransformObjectToWorldNormal(IN.normalOS));
-                float3 worldPosWS = TransformObjectToWorld(IN.positionOS.xyz);
-                OUT.viewDirWS = normalize(GetCameraPositionWS() - worldPosWS);
-                OUT.uv = IN.uv;
                 return OUT;
             }
 
             half4 frag(Varyings IN) : SV_Target
             {
-                half4 texColor = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, IN.uv);
-                
+                float3 edge1 = ddx(IN.posWS);
+                float3 edge2 = ddy(IN.posWS);
+                half3 faceNormalWS = normalize(cross(edge1, edge2));
+
                 Light mainLight = GetMainLight();
                 half3 lightDir = normalize(mainLight.direction);
 
-                half3 normalWS = normalize(IN.normalWS);
+                half NdotL = saturate(dot(faceNormalWS, -lightDir));
 
-                half NdotL = saturate(dot(normalWS, lightDir));
+                half3 finalColor = _BaseColor.rgb * NdotL;
 
-                half3 ambientSH = SampleSH(normalWS);
-
-                half3 diffuse = texColor.rgb * _BaseColor.rgb * NdotL;
-
-                half3 reflectDir = reflect(-lightDir, normalWS);
-
-                half3 viewDir = normalize(IN.viewDirWS);
-                half specFactor = pow(saturate(dot(reflectDir, viewDir)), _Shininess);
-                half3 specular = _SpecColor.rgb * specFactor;
-
-                half3 finalColor = diffuse + ambientSH * texColor.rgb * _BaseColor.rgb + specular;
-
-                return half4(finalColor, 1.0);
+                return half4(finalColor, _BaseColor.a);
             }
-
             ENDHLSL
         }
     }

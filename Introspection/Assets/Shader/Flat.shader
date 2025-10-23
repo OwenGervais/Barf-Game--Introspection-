@@ -1,4 +1,4 @@
-Shader "URP/FlatShadingURP"
+Shader "URP/Flat"
 {
     Properties
     {
