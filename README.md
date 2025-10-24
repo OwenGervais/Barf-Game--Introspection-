@@ -44,6 +44,5 @@ This shader effect was referenced by the Youtuber, Digvijaysinh Gohil. This effe
 
 This is not fully integrated into the gameplay mechanics, but it is intended to be added to future stage challenges.
 
-
-Mirror
+Mirror:
 This shader was referenced from the Youtuber, Nerd Head. To make this, it utilizes a custom render texture that references a camera to mimic a reflection. The camera acts as basically a screen, but it is pointed in the direction of the player so it acts as a mirror. The material is then set to an unlit shader to remove any unnecessary effects.
