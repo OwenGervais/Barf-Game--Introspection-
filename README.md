@@ -1,3 +1,5 @@
+Itch.io Backup (older version): https://titaniumowen.itch.io/introspection
+
 [Base Game]
 Our game was a GDW weekly project for a short narrative game. The game is intended to have branching paths which can lead to 3 endings. For this, our group decided to make a sort of PSA interactive game, which focuses on themes such as substance abuse and peer pressure. The playable character is a victim of being pressured by a close friend to take drugs. The player walks around and can interact with conflicting paths, on choosing to stay with his friend, and indulging in this unhealthy lifestyle, or to leave, having to walk away from this relationship.
 
