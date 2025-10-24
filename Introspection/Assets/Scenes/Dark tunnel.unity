@@ -590,6 +590,9 @@ MonoBehaviour:
   goodEnding: {fileID: 11400000, guid: 7a60914dc21113e409a06f213d2ae3c0, type: 2}
   neutralEnding: {fileID: 11400000, guid: d4cc4e5013329204ca45f760c11c85cc, type: 2}
   badEnding: {fileID: 11400000, guid: 80600dc3128f0414da17876ceef48384, type: 2}
+  goodLUT: {fileID: 3120299241274050317, guid: a449afef0cc321f4f96f2b78eab46f37, type: 3}
+  neutralLUT: {fileID: 3837364038540930212, guid: 712d44898f85161499b973cbe04194b3, type: 3}
+  badLUT: {fileID: 2015402766760638738, guid: ef5662dcbd3bf964db836087f7b5a2d3, type: 3}
 --- !u!95 &753952201
 Animator:
   serializedVersion: 7
