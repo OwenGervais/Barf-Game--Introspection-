@@ -5,8 +5,6 @@ public class ScreenShader : MonoBehaviour
 {
 
     [SerializeField] private UniversalRendererData rendererData;
-    [SerializeField] private Material defaultMaterial;
-    [SerializeField] private Material material1;
 
     private FullScreenPassRendererFeature fullScreenPassFeature;
 
@@ -22,32 +20,22 @@ public class ScreenShader : MonoBehaviour
         }
     }
 
-    //private void Update()
-    // {
-    //     if (Input.GetKey(KeyCode.Alpha1))
-    //     {
-    //         Swap1();
-    //     }
-
-    //     if (Input.GetKey(KeyCode.Alpha0))
-    //     {
-    //         SwapDefault();
-    //     }
-    // }
-
-    public void SwapDefault()
+    private void Update()
     {
-        if (fullScreenPassFeature != null)
+        if (Input.GetKey(KeyCode.Alpha1))
         {
-            fullScreenPassFeature.passMaterial = defaultMaterial;
+            if (fullScreenPassFeature != null)
+            {
+                fullScreenPassFeature.SetActive(true);
+            }
         }
-    }
 
-    public void Swap1()
-    {
-        if (fullScreenPassFeature != null)
+        if (Input.GetKey(KeyCode.Alpha0))
         {
-            fullScreenPassFeature.passMaterial = material1;
+            if (fullScreenPassFeature != null)
+            {
+                fullScreenPassFeature.SetActive(false);
+            }
         }
     }
 }
